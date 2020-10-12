@@ -12,7 +12,7 @@ client.config = {
 client.commands = new Enmap();
 client.queue = new Map();
 
-client.once("ready", () =>
+client.once("ready", () => 
   console.log("Ready, Logged in as " + client.user.tag)
 );
 
