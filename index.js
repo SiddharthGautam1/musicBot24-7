@@ -5,9 +5,8 @@ const fs = require("fs");
 const Enmap = require("enmap");
 
 client.config = {
-  token: process.env.DISCORD_TOKEN,
-  prefix: process.env.DISCORD_PREFIX,
-  api: process.env.GOOGLE_API,
+  prefix: "d!",
+  api: "AIzaSyDanZTfZ6UdeaTh_PrPnomlYlIn-M9oJV8",
 };
 client.commands = new Enmap();
 client.queue = new Map();
@@ -38,4 +37,4 @@ client.on("message", (message) => {
   command.run(client, message, args);
 });
 
-client.login(client.config.token);
+client.login(process.env.token);
